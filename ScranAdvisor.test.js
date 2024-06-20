@@ -124,9 +124,12 @@ describe('ScranAdvisor', () => {
 
     // // Extensions
 
-    // test.skip('can find the most common cuisine type', () => {
-
-    // })
+    test.skip('can find the most common cuisine type', () => {
+      const expected = "JAPANESE";
+      const actual = scranAdvisor.mostCommonCuisine();
+      expect(actual).isEqual(expected);
+    })
+    
 
     // test.skip('can find restaurant with substring', () => {
 
